@@ -13,16 +13,20 @@ def haeicao():
     if icao == "":
         return
     else:
-        for i in range(0, len(icaolista)):
-            if icaolista[i][0] == icao:
-                print(icaolista[i][1])
-        return
+        if len(icaolista) != 0:
+            for i in range(0, len(icaolista)):
+                if icaolista[i][0] == icao:
+                    print(icaolista[i][1])
+            return
+        else:
+            print("Lentokenttä lista on tyhjä")
+            return
 
 icaolista = []
 
 
 while 1:
-    kayttajanvalinta = input("asdasdas")
+    kayttajanvalinta = input("Lisää [Uusi] lentokenttä, [Hae] tietokannasta lentokenttä tai [Lopeta]:\n")
     if kayttajanvalinta == "" or kayttajanvalinta[0] == "L" or kayttajanvalinta[0] == "l":
         break
     elif kayttajanvalinta[0] == "U" or kayttajanvalinta[0] == "u":
