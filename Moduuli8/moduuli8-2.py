@@ -31,8 +31,8 @@ distinctkentat = sorted(distinct(maakoodi))
 kenttienmaara = [0]
 
 for i in range(0, len(distinctkentat)):
-    for j in kentat:
-        if j == distinctkentat[i]:
+    for kentta in kentat:
+        if kentta == distinctkentat[i]:
             if len(kenttienmaara) - 1 < i:
                 kenttienmaara.append(0)
             kenttienmaara[i] += 1
