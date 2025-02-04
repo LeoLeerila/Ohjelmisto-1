@@ -1,5 +1,5 @@
 
-vuodenajat = ["kevät", "kesä", "syksy", "talvi"]
+vuodenajat = ("kevät", "kesä", "syksy", "talvi")
 
 kayttajanvalinta = int(input("Syötä kuukauden numero: "))
 

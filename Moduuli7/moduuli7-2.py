@@ -4,9 +4,9 @@ def tarkistanimi(tarkistettavanimi):
         print("Aiemmin syötetty")
     else:
         print("Uusi nimi")
-        nimilista.append(tarkistettavanimi)
+        nimilista.add(tarkistettavanimi)
 
-nimilista = []
+nimilista = set()
 
 while 1:
     nimi = input("Syötä nimi: ")
@@ -14,6 +14,5 @@ while 1:
         break
     tarkistanimi(nimi)
 
-nimilista.sort()
 for i in nimilista:
     print(i)
